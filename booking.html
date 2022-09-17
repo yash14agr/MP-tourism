@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP Booking</title>
+    <style>
+        .container{
+            background-image: url(/Wild\ Life\ -\ Landing\ Page.png);
+            background-size: 100%;
+            z-index: -1;
+            height: 40vw;
+
+        }
+        .navbar{
+            display: flex;
+            justify-content: end;
+            padding: 2vw;
+            /* border: 2px solid red; */
+        }
+        .navbar span{
+            padding: 2vw;
+            font-size: 1.5vw;
+            color: rgb(146, 146, 150);
+            text-shadow: 1px 1px 2px rgb(45, 104, 199);
+            text-underline-offset: .5vw;
+            
+        }
+        .navbar span:hover{
+            color: rgb(55, 104, 199);;
+        }
+        .heading{
+            position: absolute;
+            z-index: 1;
+            color: rgb(255, 255, 255);
+            top: 2.2vw;
+            left: 5vw;
+            font-size: 2vw;
+            text-shadow: 3px 3px 5px rgb(20, 150, 220);
+        }
+        .form{
+            border: 2px solid grey;
+            box-shadow: 3px 3px 20px grey;   
+            
+        }
+        .form_heading{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .form p{
+            font-size: 2vw;
+        }
+        .mainform{
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            width: 50%;
+        }
+        .box input{
+            width: 90%;
+            padding:1vw ;
+            margin: .5vw;
+            color: grey;
+        }
+        .box select{
+            width: 90%;
+            padding:1vw ;
+            margin: .5vw;
+            color: grey;
+        }
+        textarea{
+            margin: .5vw;
+        }
+        .button-div{
+            justify-content: center;
+            display: flex;
+        }
+        button{
+            font-size: 1.7vw;
+            color:white;
+            border-radius:20px ;
+            margin: 1vw;
+            cursor: pointer;
+            padding:.3vw ;
+            background-color: rgb(43, 98, 133);            
+        }
+        button:hover{
+            background-color: rgb(17, 101, 236);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <span><u>Home</span></u>
+            <span><u>Places to visit</span></u>
+            <span><u>About us</span></u>
+            <span><u>search</span></u>
+        </div>
+        <div class="heading">
+            <p>MP Tourism-Booking</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="form">
+        <div class="form_heading"><p>Please fill the details below.</p></div>
+        <div class="mainform">
+            <div class="box">
+                <input type="text" name="text1" id="text1" placeholder="Full Name"><br>
+                <input type="number" name="text2" id="text2" placeholder="Mobile Number">
+                <!-- <input type="number" name="text6" id="text6" placeholder="Select your National Park"> -->
+                <select name="text6" id="text6">
+                    <option value="" disabled selected>Select your National Park</option>
+                    <option value="">Pench National Park</option>
+                    <option value="">Panna National Park</option>
+                    <option value="">Kanha National Park</option>
+                    <option value="">Tadoba National Park</option>
+                    <option value="">Satpura National Park</option>
+                </select>
+            </div>
+            <div class="box">
+                <input type="email" name="text3" id="text3" placeholder="Email"><br>
+                <input type="date" name="text4" id="text4" placeholder="Date"><br>
+                <select name="text7" id="text7">
+                    <option value="" disabled selected>Select your Safari Time</option>
+                    <option value="">Morning</option>
+                    <option value="">Evening</option>
+                    <option value="">Night</option>
+                </select>
+            
+            </div>
+            
+        </div>
+        <div class="description">
+            <!-- <textarea name="text5" id="text5" cols="163" rows="10" placeholder="Details/Message (if any)"></textarea> -->
+        </div>
+        <div class="button-div">
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>
